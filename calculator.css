@@ -1,0 +1,93 @@
+* {
+    Padding: 0;
+    Margin: 0;
+    Box-Sizing: Border-Box;
+}
+html {
+    Font-Family: "Montserrat", Sans-Serif;
+}
+section {
+    Background-Color: Rgb(18, 26, 31);
+    Min-Height: 100vh;
+    Width: 100%;
+    Display: Flex;
+    Align-Items: Center;
+    Justify-Content: Center;
+}
+.container {
+    Width: 90%;
+    Max-Width: 400px;
+    Background-Color: Rgb(39, 55, 59);
+    Border-Radius: 8px;
+    Overflow: Hidden;
+}
+.display {
+    Background-Color: Rgb(182, 182, 182);
+    Height: 100px;
+    Width: 100%;
+    Text-Align: Right;
+    Padding: 20px;
+    Font-Size: 30px;
+    Position: Relative;
+}
+.display1 {
+    Opacity: 1.0;
+    Font-Size: 20px;
+    Height: 30px;
+    Overflow: Hidden;
+    Width: 100%;
+    Position: Relative;
+    Text-Align: Right;
+    Height: 75px;
+}
+.display2{
+display: none;
+
+}
+.result {
+    Position: Absolute;
+    Bottom: 0;
+    Left: 10;
+    Font-Size: 20px;
+    Opacity: 0.3;
+}
+.buttons {
+    Color: hotpink;
+    Display: Grid;
+    Grid-Template: Repeat(4, 1fr) / Repeat(4, 1fr);
+}
+#calcbutton{
+    Border: 0.5px Solid Rgba(92, 92, 92, 0.137);
+    Display: Inline-Block;
+    Height: 100px;
+    Width: 100%;
+    Display: Flex;
+    Align-Items: Center;
+    Justify-Content: Center;
+    Font-Size: 30px;
+    Cursor: Pointer;
+    background-color: gray;
+}
+
+#calcbutton:hover {
+    Background-Color: Rgb(30, 43, 46);
+}
+.btn-0 {
+    Grid-Column: 1/3;
+    Border: 0.5px Solid Rgba(92, 92, 92, 0.137);
+    Display: Inline-Block;
+    Height: 100px;
+    Width: 100%;
+    Display: Flex;
+    Align-Items: Center;
+    Justify-Content: Center;
+    Font-Size: 30px;
+    Cursor: Pointer;
+}
+.btn-0:hover {
+    Background-Color: Rgb(30, 43, 46);
+}
+.clear{
+background-color: green;
+
+}
