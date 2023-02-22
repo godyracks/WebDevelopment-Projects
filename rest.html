@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laikipia Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="rest.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="container1">
+<header>
+    <div class="logo">
+        <p><span class="LU">L</span>U CATERING</p><br/>
+           
+    </div>
+    <div class="sign">
+        <button class="login">
+            <p class="fa fa-user-circle-o"></p> <a href="restLogin.html">Log in</a>
+        </button>
+        <button class="signup">
+            <p class="fa fa-pencil-square-o"></p>Sign Up
+        </button>
+    </div>
+    
+
+</header>
+<hr />
+<nav class="navbar">
+    <ul>
+        <li class="active">HOME</li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li >
+            
+            <select class="rsv">
+              <option hidden id="rsv">RESERVE SEAT</option>
+              <option>LECTURER</option>
+              <option>STUDENT</option>
+              <option>STAFF</option>
+            </select>
+        </li>
+        <li><a href="restMenu.html">MENU</a></li>
+        <li><a href="restContact.html">CONTACT</a></li>
+        <li class="space"><input type="text" placeholder="Search Here..."/> <button class="search"><i class="fa fa-search"></i></button></li>
+    </ul>
+</nav>
+<main>
+<div class="float-parent">
+    <div class="float-child" id="btn">
+        <div>
+        <p class="info">EAT RIGHT FOOD <p class="info1">Eat Healthy, it is good for our health.</p></p><br> 
+        <button class="order" type="submit">ORDER NOW</button>
+        </div>
+    </div>
+    <div class="float-child" id="food-imgs">
+        <div class="image">
+            <ul class="slides">
+                <input type="radio" name="radio-btn" id="img-1" checked />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="laikipiamix.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-6" class="prev">&#x2039;</label>
+                        <label for="img-2" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-2" />
+                <li class="slide-container">
+                    <div class="slide">
+                      <img src="nyamchom.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-1" class="prev">&#x2039;</label>
+                        <label for="img-3" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-3" />
+                <li class="slide-container">
+                    <div class="slide">
+                      <img src="chapo.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-2" class="prev">&#x2039;</label>
+                        <label for="img-4" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-4" />
+                <li class="slide-container">
+                    <div class="slide">
+                      <img src="wali.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-3" class="prev">&#x2039;</label>
+                        <label for="img-5" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-5" />
+                <li class="slide-container">
+                    <div class="slide">
+                      <img src="samak.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-4" class="prev">&#x2039;</label>
+                        <label for="img-6" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-6" />
+                <li class="slide-container">
+                    <div class="slide">
+                      <img src="uganye.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-5" class="prev">&#x2039;</label>
+                        <label for="img-1" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            
+                <li class="nav-dots">
+                  <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                  <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                  <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                  <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                  <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                  <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+                </li>
+            </ul>
+       </div>
+    </div>
+</div>
+</main>
+<footer>
+    <p><em>Built By Godfrey Matagaro Inc.</em></p>
+</footer>
+</div>
+</div>  
+<script src="rest.js"></script>  
+</body>
+</html>

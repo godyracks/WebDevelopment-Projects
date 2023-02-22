@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+body{
+background-color: aliceblue;
+padding: 0;
+margin: 0;
+font-family: "Poppins", sans-serif;
+box-sizing: border-box;
+padding-top: 20px;
+}
+.container{
+    width: 80%;
+    height: 90;
+    border: 1px solid white;
+    background-color: white;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 14px;
+    box-shadow: 0px 3px 8px gray
+
+
+}
+.container1{
+    width: ;
+    height: ;
+    border: 1px solid white;
+    background-color: rgb(20, 178, 178);
+    margin: 12px;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+}
+.logo{
+float: left;
+margin-left: 30px;
+color: whitesmoke;
+}
+.sign{
+float: right;
+margin-right: 30px;
+
+}
+hr{
+    margin-top: 40px;
+    width: 90%;
+    color: grey;
+    background-color: grey;
+    border: 1px solid grey;
+}
+nav{
+    margin-top: 50px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+li:hover{
+    cursor: pointer;
+    
+}
+li{
+    padding: 4px;
+    margin: 3px;
+    font-size: 14px;
+    
+}
+.space{
+    margin-left: 210px;
+    background-color: white;
+}
+input{
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    font-style: italic;
+    padding: 10px;
+    font-size: 12px;
+}
+.search{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    height: 20px;
+    width: 30px;
+    font-size: 10px;
+    cursor: pointer;
+    
+}
+.search:hover{
+    background-color: white;
+}
+.active{
+    color: red;
+}
+.login{
+    background-color: rgb(20, 178, 178);
+    border: none;
+    cursor: pointer;
+    color: rgb(43, 40, 40);
+}
+.signup{
+    background-color: rgb(20, 178, 178);
+    border: none;
+    cursor: pointer;
+}
+.float-parent{
+    width: 100%;
+    border: none;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 1px;
+}
+.float-child{
+    
+    width: 50%;
+    border: none;
+    padding: 10px;
+    height: 60vh;
+    margin-bottom: 1px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(51, 50, 50);
+}
+.info1{
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.order{
+     background-color: red;
+     border: none;
+     height: 40px;
+     width: 150px;
+     color: white;
+     border-radius: 6px;
+     cursor: pointer;
+     font-size: 12px;
+     box-shadow: 0px 1px 3px 2px gray;
+}
+span::first-letter{
+    initial-letter: 8;
+}
+.fa{
+    color: white;
+}
+.rsv{
+    border: none;
+    background-color: rgb(20, 178, 178);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    color: rgb(52, 3, 3);
+    font-size: 15px;
+}
+/*code for sliding image starts here*/
+.slides {
+    padding: 0;
+    width: 280px;
+    height: 200px;
+    display: block; /*block*/
+    margin: 0 auto;
+    position:relative;
+	transition: box-shadow 0.5s;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px #222;
+}
+.slides:hover{
+	box-shadow: 0px 0px 50px #222;
+}
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; 
+                    
+                    padding: 0;
+                    margin: 0;
+} /* block */
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 280px;
+    height: 200px;
+    display: block; /*block*/
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+	border-radius: 20px;
+    
+}
+
+.nav label {
+    width: 100px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 100pt;
+    text-align: center;
+    line-height: 150px; /* >><< */
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .0);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: #fff;
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: #8D60DE;
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: #000;
+}
+/*log in starts here*/
+  
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgb(20, 178, 178);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #8D60DE;
+    font-size: 12px;
+    
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    left: 100px;
+  }
+  
+  .login-box a:hover,.btn {
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px whitesmoke,
+                0 0 25px whitesmoke,
+                0 0 50px whitesmoke,
+                0 0 100px whitesmoke;
+  }
+  
+  .login-box a span, .btn {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, red);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, red);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, red);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, red);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+  /* css for contact form*/
+  #contact {
+    padding: 5rem 0;
+    background: rgb(20, 178, 178);
+  }
+  
+  .contact-container2 {
+    display: flex;
+    background: white;
+  }
+  
+  .contact-img {
+    width: 50%;
+  }
+  
+  .contact-img img {
+    display: block;
+    height: 400px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+  
+  .form-container2 {
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .form-container2 input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  .form-container2 textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    color: #444;
+    outline: none;
+    padding: 1rem 0;
+    resize: none;
+  }
+  
+  .form-container2 h2 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 1rem;
+    margin-top: -1.2rem;
+  }
+  
+  .form-container2 a {
+    font-size: 1.3rem;
+  }
+  /* .........../Food Menu/............ */
+
+.food-menu-heading {
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: #666;
+  }
+  
+  .food-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 30px 0px;
+    background-color: rgb(20, 178, 178);
+  }
+  
+  .food-menu-container img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .food-menu-item {
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+  }
+  
+  .food-description {
+    margin: auto 1.5rem;
+  }
+  
+  .font-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #444;
+  }
+  
+  .food-description p {
+    font-size: 1.4rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .food-description .food-price {
+    color: #117964;
+    font-weight: 700;
+  }
+  
+ 
